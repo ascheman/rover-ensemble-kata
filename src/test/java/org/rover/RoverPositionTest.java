@@ -3,10 +3,10 @@ package org.rover;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RoverPositionTest {
+ class RoverPositionTest {
 
     @Test
-    public void facingNorthMoveForward() {
+     void facingNorthMoveForward() {
         Rover rover = new Rover(0, 0, "N");
 
         rover.receive("f");
@@ -15,7 +15,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingNorthMoveBackward() {
+     void facingNorthMoveBackward() {
         Rover rover = new Rover(0, 0, "N");
 
         rover.receive("b");
@@ -24,7 +24,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingSouthMoveForward() {
+     void facingSouthMoveForward() {
         Rover rover = new Rover(0, 0, "S");
 
         rover.receive("f");
@@ -33,7 +33,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingSouthMoveBackward() {
+     void facingSouthMoveBackward() {
         Rover rover = new Rover(0, 0, "S");
 
         rover.receive("b");
@@ -42,7 +42,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingWestMoveForward() {
+     void facingWestMoveForward() {
         Rover rover = new Rover(0, 0, "W");
 
         rover.receive("f");
@@ -51,7 +51,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingWestMoveBackward() {
+     void facingWestMoveBackward() {
         Rover rover = new Rover(0, 0, "W");
 
         rover.receive("b");
@@ -60,7 +60,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingEastMoveForward() {
+     void facingEastMoveForward() {
         Rover rover = new Rover(0, 0, "E");
 
         rover.receive("f");
@@ -69,7 +69,7 @@ public class RoverPositionTest {
     }
 
     @Test
-    public void facingEastMoveBackward() {
+     void facingEastMoveBackward() {
         Rover rover = new Rover(0, 0, "E");
 
         rover.receive("b");

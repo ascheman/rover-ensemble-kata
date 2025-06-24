@@ -2,10 +2,10 @@ package org.rover;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RoverCommandsListTest {
+ class RoverCommandsListTest {
 
     @Test
-    public void noCommands() {
+     void noCommands() {
         Rover rover = new Rover(0, 0, "N");
 
         rover.receive("");
@@ -14,7 +14,7 @@ public class RoverCommandsListTest {
     }
 
     @Test
-    public void twoCommands() {
+     void twoCommands() {
         Rover rover = new Rover(0, 0, "N");
 
         rover.receive("lf");
@@ -23,7 +23,7 @@ public class RoverCommandsListTest {
     }
 
     @Test
-    public void manyCommands() {
+     void manyCommands() {
         Rover rover = new Rover(0, 0, "N");
 
         rover.receive("ffrbbrfflff");
